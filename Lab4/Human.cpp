@@ -66,10 +66,10 @@ char Human::get_c_sex()
 void Human::if_birthday()
 {
 	struct tm now;
-	__time64_t long_time;
-	_time64(&long_time);
+	__time32_t long_time;
+	_time32(&long_time);
 	errno_t err;
-	err = _localtime64_s(&now, &long_time);
+	err = _localtime32_s(&now, &long_time);
 
 	if ((now.tm_mday) == (this->birthday.day) && (now.tm_mon + 1) == (this->birthday.month + 1) && (now.tm_year + 1900) == (this->birthday.year))
 		cout << "This person has got birthday today! :D" << endl;
