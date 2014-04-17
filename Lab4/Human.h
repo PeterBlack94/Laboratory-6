@@ -16,7 +16,7 @@ class Human :
 {
 protected:
 	static int i_counter;
-	static int i_counter_books;
+	int i_counter_books;
 	char c_sex;
 	::birthday birthday;
 	string s_firstname;

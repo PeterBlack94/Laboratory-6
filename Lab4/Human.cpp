@@ -2,13 +2,13 @@
 #include "Human.h"
 
 int Human::i_counter = 0;
-int Human::i_counter_books = 0;
 
 Human::Human(int i_n)
 {
 	++i_counter;
-	p_favorite_books = new string[i_n];
-	i_counter_books=+i_n;
+	i_counter_books = i_n;
+	p_favorite_books = new string[i_counter_books];
+
 }
 
 Human::~Human()

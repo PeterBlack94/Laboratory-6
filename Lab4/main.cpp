@@ -13,11 +13,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Creating object student1" << endl;
 	Student student1;
 	cout << Student::count() << " objects created." << endl;
-	cin >> student1;
-	cout << student1;
+
 
 	cout << "Creating object student2" << endl;
 	Student2 student2;
+	cin >> student2;
+	cout << student2;
 	cout << Student2::count() << " objects created." << endl;
 
 	cout<<"Creating object tutor1..."<<endl;
